@@ -3,7 +3,7 @@ import { Item } from './interfaces/item.interface';
 import { Model } from 'mongoose';
 import { InjectModel } from '@nestjs/mongoose';
 
-@Injectable()
+// @Injectable()
 export class ItemsService {
   constructor(@InjectModel('Item') private readonly itemModel: Model<Item>) {}
 
